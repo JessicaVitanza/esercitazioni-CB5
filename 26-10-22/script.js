@@ -31,7 +31,7 @@ console.log(arrayOfData);
 
 let str = "#######";
 
-for (let i = 0; i <= 6; i++) {
+for (let i = 1; i <= 7; i++) {
   console.log(str.slice(i));
 }
 
