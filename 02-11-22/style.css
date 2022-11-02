@@ -207,14 +207,10 @@ padding: 12px 1000px;
    border:2px solid #563b30;
 }
 
-
-
-
-
 #myBtn {
     position: fixed;
-    bottom: 0px;
-    left: 0px;
+    bottom: 8px;
+    left: 8px;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -222,13 +218,15 @@ padding: 12px 1000px;
     background-color: #3f2d27;
     color: white;
     cursor: pointer;
-    padding: 35px 35px 20px 30px;
-    border-radius:0px 90px 0px 0px;
+    padding: 28px 25px;
+    border-radius:90px;
+    border: 2px solid #3f2d27;
   }
   
-  #myBtn:hover {
+  #myBtn:hover{
       transition: all 0.4s;
     background-color: #8b916d;
+    border: 2px solid #3f2d27;
   }
 
 @media screen and (min-width: 768px) {
