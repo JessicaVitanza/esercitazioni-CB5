@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     background-image: url('./assets/pattern.jpeg');
     background-size:inherit;
+    scroll-behavior: smooth;
 }
 
 #navbar {
@@ -205,6 +206,30 @@ padding: 12px 1000px;
 .contatti a:hover {
    border:2px solid #563b30;
 }
+
+
+
+
+
+#myBtn {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #3f2d27;
+    color: white;
+    cursor: pointer;
+    padding: 35px 35px 20px 30px;
+    border-radius:0px 90px 0px 0px;
+  }
+  
+  #myBtn:hover {
+      transition: all 0.4s;
+    background-color: #8b916d;
+  }
 
 @media screen and (min-width: 768px) {
     
