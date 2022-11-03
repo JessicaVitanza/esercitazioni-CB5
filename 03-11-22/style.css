@@ -1,0 +1,315 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    font-family: 'Didact Gothic', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-content:center;
+    flex-wrap: wrap;
+    background-color: #e23530;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+
+nav img {
+    display: none;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav div button {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color:transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.discipline {
+    background-color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.discipline div {
+    background-color: rgba(0, 0, 0, 0.658);
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discipline div img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    object-fit:contain;
+}
+
+.discipline div h1 {
+    margin: 20px 20px -10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.discipline div p {
+    padding: 0 20px;
+    line-height: 30px;
+    font-size: 1.3rem;
+    color: #f1f1f1;
+}
+
+#gallery {
+    width: 100%;
+    height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto;
+  background-color: #e23530;
+  margin-top: 0;
+}
+
+#gallery h1{
+letter-spacing: 6px;
+margin: 0px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 20px; 
+    padding-left: 20px;
+}
+
+.card {
+    height: 70%;
+    width: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px black;
+    background-color:#f1f1f1;    
+}
+
+.card h3 {
+    color: black;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.card p {
+    letter-spacing: 2px;
+}
+
+.card button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    box-shadow: 3px 3px 3px black;
+    background-color: rgba(0, 0, 0, 0.658);
+    text-transform: uppercase;
+}
+
+.card button:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 2px black;
+    color: #e23530;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-top: -20px;
+  }
+
+form p {
+    font-size: 1.8rem;
+}
+
+ input, textarea {
+      padding: 6px;
+    border-radius: 4px;
+    border: 0;
+    border: 1px solid #61845726;
+  }
+
+  .box-input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+.invia {
+    width: 100px;
+    box-shadow: 2.5px 2.5px 4px black;
+    margin: 8px 0;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.658);
+    font-size: 1rem;
+}
+
+.invia:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 2px black;
+}
+
+footer {
+    padding: 8px 16px;
+    background-color: #e23530;
+}
+
+footer h3{
+    margin-bottom: -12px;
+}
+
+#darkMode {
+    border: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 45px;
+    box-shadow: 2px 2px 2px black;
+    align-self: center;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (min-width: 767px) {
+
+    nav {
+        justify-content: space-evenly;
+
+    }
+
+    nav img {
+        display: block;
+        width: 14%;
+    }
+
+    nav div button {
+        font-size: 1.2rem;
+        margin-right: 40px;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+
+    .discipline {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 26px;
+    }
+
+    .discipline div {
+        width: 680px;
+    }
+
+    form {
+        width: 50%;
+    }
+
+}
+
+    @media only screen and (min-width: 1280px){
+
+    nav {
+        height: 70px;
+    }
+
+    nav img {
+        display: block;
+        width: 11%;
+    }
+
+    nav div button {
+        font-size: 1.5rem;
+        margin-right: 80px;
+    }
+
+    nav div button:hover {
+        font-size: 1.5rem;
+        margin-right: 80px;
+        box-shadow: 3px 3px 3px black;
+    }
+
+    nav div button:active {
+        transform: translateY(2px);
+    box-shadow: 2px 2px 2px black;
+    }
+
+    .hero p {
+        font-size: 2rem;
+        line-height: 60px;
+    }
+
+    .discipline div {
+        width: 420px;
+    }
+
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <title>Equilibrium</title>
+</head>
+<body>
+
+    <nav>
+        <img src="./assets/logoipsum-288.svg" alt="">
+        <div>
+            <button>Discipline</button>
+            <button>Abbonamenti</button>
+            <button>Contatti</button>
+        </div>
+        <button id="darkMode">🌗</button>
+    </nav>
+
+
+    <div class="hero">
+      
+        <p>Voglia di fare sport? Mettiti in gioco! <br> 
+           Calisthenics, Power Yoga o Bodybuilding, <br> 
+           queste sono le discipline a tua disposizione e tante le modalità di allenamento. <br>
+           Esplora le varie sezioni e contattami per maggiori informazioni! </p>
+    </div>
+
+
+    <div class="discipline">
+        <div>
+            <img src="https://thenics.de/images/4-12.jpg" alt="">
+            <h1>Calisthenics</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta voluptate in suscipit blanditiis cum pariatur molestiae autem? Sed cupiditate dignissimos repudiandae cumque enim itaque incidunt magni velit accusantium tenetur!
+            Officiis officia, porro obcaecati id ipsum consequuntur vel qui quaerat minus consequatur modi deserunt voluptatibus animi sunt odio assumenda, dolores alias architecto provident facilis! Iusto placeat corrupti optio obcaecati vero.</p>
+        </div>
+        <div>
+            <img src="https://img.freepik.com/premium-photo/woman-doing-yoga-pose-black-white-photo_148632-257.jpg" alt="">
+            <h1>Power Yoga</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta voluptate in suscipit blanditiis cum pariatur molestiae autem? Sed cupiditate dignissimos repudiandae cumque enim itaque incidunt magni velit accusantium tenetur!
+            Officiis officia, porro obcaecati id ipsum consequuntur vel qui quaerat minus consequatur modi deserunt voluptatibus animi sunt odio assumenda, dolores alias architecto provident facilis! Iusto placeat corrupti optio obcaecati vero.</p>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/photos/black-and-white-photo-of-athletic-man-exercising-deadlift-with-picture-id1199283540?k=20&m=1199283540&s=170667a&w=0&h=Y5c9VXlbEeb_-T3fqH5nVEa_bMA-yWx_heZCBx1wEEM=" alt="">
+            <h1>Bodybuilding</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta voluptate in suscipit blanditiis cum pariatur molestiae autem? Sed cupiditate dignissimos repudiandae cumque enim itaque incidunt magni velit accusantium tenetur!
+            Officiis officia, porro obcaecati id ipsum consequuntur vel qui quaerat minus consequatur modi deserunt voluptatibus animi sunt odio assumenda, dolores alias architecto provident facilis! Iusto placeat corrupti optio obcaecati vero.</p>
+        </div>
+    </div>
+
+
+    <div id="gallery"></div>
+
+
+    <form id="contact">
+
+        <p>Hai qualche domanda? <br> 
+           Lascia un messaggio qui:</p>
+        
+        <div class="box-input">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            class="input-desk"
+            placeholder="es: Mario"
+            required
+          />
+          <label for="cognome">Cognome</label>
+          <input
+            type="text"
+            name="cognome"
+            id="cognome"
+            class="input-desk"
+            placeholder="es: Rossi"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-desk"
+            placeholder="es: mariorossi@gmail.com"
+            required
+          />
+          <label for="tel">Telefono</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            class="input-desk"
+            placeholder="es: 3458362421"
+            required
+          />
+          
+          <label for="message">Il tuo messaggio</label>
+          <textarea
+            name="message"
+            id="message"
+            class="input-desk"
+            cols="30"
+            rows="10"
+            placeholder="Scrivi qui il tuo messaggio.."
+            required
+          ></textarea>
+          <input class="invia" type="submit" value="Invia" />
+        </div>
+      </form>
+
+
+      <footer>
+        <h3>Privacy</h3>
+        <p> Autorizzo il trattamento dei miei dati personali, ai sensi del D.lgs. 196 del 30 giugno 2003.</p>
+    </footer>
+    
+<script src="./script.js" type="module"></script> 
+</body>
+</html>

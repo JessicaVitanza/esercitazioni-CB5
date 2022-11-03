@@ -1,4 +1,4 @@
-[
+const subscriptions = [
   {
     name: "Calisthenics base",
     type: "mensile",
@@ -313,3 +313,5 @@
     id: "7",
   },
 ];
+
+export default subscriptions;
