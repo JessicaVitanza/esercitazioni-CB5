@@ -3,14 +3,14 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #f1f1f1;
     font-family: 'Didact Gothic', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content:center;
     flex-wrap: wrap;
     background-color: #e23530;
@@ -23,22 +23,133 @@ nav img {
     display: none;
 }
 
-nav div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.menu__desk {
+    display: none;
 }
 
-nav div button {
-    border: none;
-    padding: 8px;
-    border-radius: 8px;
-    background-color:transparent;
+.hamburger-menu{
+    display: block;
+    cursor: pointer;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(270deg);
+
+
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 18px;
+    margin-left: 6px;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    border-radius: 16px;
+    background-color: black;
+    transition-duration: .25s;
+  
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -10px;
+
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 10px;
+    
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: -12px;
+    left: -100%;
+    width: 238px;
+    height: fit-content;
+    margin-top: 72px;
+    padding: 30px 0px;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px black;
+    transition-duration: .40s;
+    border-radius: 0px 16px 16px 0px;
+    z-index: 20;
+
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
     color: #fff;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    font-family: 'Didact Gothic', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #e23530;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .35s;
+    letter-spacing: 3px;
+  }
+  .menu__item:active {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: #fff;
+    text-shadow: none;
+    text-decoration: none;
+    box-shadow: -3px 3px 4px black;
+
+  }
+
+
+  #darkMode {
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    height: 46px;
+    width: 46px;
+    border-radius: 45px;
+    align-self: center;
+    background-color: transparent;
+}
+
+#darkMode:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 2px black;
+}
+
+#darkMode img {
+   width: 36px;
+   display: block;
+}
+
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.934);
+    color: white;
 }
 
 .hero {
@@ -49,7 +160,7 @@ nav div button {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 .hero p {
@@ -58,7 +169,7 @@ nav div button {
 }
 
 .discipline {
-    background-color: #fff;
+    background-color: #e5e5e5;
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
@@ -136,7 +247,7 @@ margin: 0px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 3px 3px 6px black;
-    background-color:#f1f1f1;    
+    background-color:#f1f1f1;   
 }
 
 .card h3 {
@@ -167,6 +278,22 @@ margin: 0px;
     color: #e23530;
 }
 
+#contatti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    margin-top: -20px;
+    padding: 30px 0;
+}
+
+#contatti a {
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    font-size: 1.2rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -175,6 +302,7 @@ form {
     font-size: 1.2rem;
     padding: 20px;
     margin-top: -20px;
+    margin-bottom: 20px;
   }
 
 form p {
@@ -214,42 +342,88 @@ form p {
 footer {
     padding: 8px 16px;
     background-color: #e23530;
+    color: #f1f1f1;
 }
 
 footer h3{
     margin-bottom: -12px;
 }
 
-#darkMode {
-    border: none;
-    height: 36px;
-    width: 36px;
-    border-radius: 45px;
-    box-shadow: 2px 2px 2px black;
-    align-self: center;
+
+.ball-container {
+    margin: auto;
+    animation: floating 5s ease-in-out infinite;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 16px;
+    position: fixed;
+    background: #e5e5e5;
+    display: flex;
+    justify-content: center;
+align-items: center;
+color: black;
+box-shadow: 3px 3px 4px black;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
+@keyframes floating {
+    0% {
+      transform: translatey(0px);
+    }
+
+    50% {
+      transform: translatey(-40px);
+    }
+
+    100% {
+      transform: translatey(0px);
+    }
 }
 
 
 @media screen and (min-width: 767px) {
 
-    nav {
-        justify-content: space-evenly;
-
+   
+ nav {
+        justify-content: center;
+        gap: 50px;
     }
 
     nav img {
         display: block;
         width: 14%;
+        margin-left: -100px;
     }
 
-    nav div button {
-        font-size: 1.2rem;
-        margin-right: 40px;
+    .menu__desk {
+        display: block;
+ 
+    }
+  
+    .menu__desk ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 40px;
+      border: none;
+      padding: 8px;
+      border-radius: 8px;
+      background-color:transparent;
+      color: #fff;
+      letter-spacing: 2px;
+        list-style: none;
+  }
+
+  .menu__desk a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      font-family: 'Didact Gothic', sans-serif;
+  }
+
+    .hamburger-menu{
+        display: none;
     }
 
     .hero p {
@@ -269,8 +443,21 @@ footer h3{
         width: 680px;
     }
 
+    #contatti {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #contatti a {
+        font-size: 0.96rem;
+    }
+
     form {
         width: 50%;
+    }
+
+    #darkMode {
+        right: -80px;
     }
 
 }
@@ -279,25 +466,42 @@ footer h3{
 
     nav {
         height: 70px;
+        gap: 140px;
     }
 
     nav img {
         display: block;
         width: 11%;
+        margin-left: -220px;
     }
 
-    nav div button {
-        font-size: 1.5rem;
-        margin-right: 80px;
-    }
 
-    nav div button:hover {
+    .menu__desk ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 160px;
+      border: none;
+      padding: 8px;
+      border-radius: 8px;
+      background-color:transparent;
+      color: #fff;
+      letter-spacing: 2px;
+        list-style: none;
+  }
+
+  .menu__desk a {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+    .menu__desk a:hover {
         font-size: 1.5rem;
-        margin-right: 80px;
         box-shadow: 3px 3px 3px black;
     }
 
-    nav div button:active {
+    .menu__desk a:active {
         transform: translateY(2px);
     box-shadow: 2px 2px 2px black;
     }
@@ -311,5 +515,13 @@ footer h3{
         width: 420px;
     }
 
+    #contatti a {
+        font-size: 1.2rem;
+    }
 
+    #darkMode {
+        right: -200px;
+    }
 }
+
+

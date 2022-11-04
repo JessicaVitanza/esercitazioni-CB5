@@ -55,5 +55,15 @@ const displayRecipes = (name, type, price) => {
      });
 
 
-     
+     function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+       }
+  
+       const button = document.getElementById("myBtn");
+       button.addEventListener("click", topFunction);
+
+      
+ 
+      
 
