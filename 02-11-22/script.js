@@ -2,43 +2,43 @@ import recipes from "./recipes.js"
 
 const body = document.querySelector("body");
 
-const navbar = document.getElementById("navbar");
-const ul = document.createElement("ul");
-const li1 = document.createElement("li");
-const li2 = document.createElement("li");
-const li3 = document.createElement("li");
-const li4 = document.createElement("li");
-const li5 = document.createElement("li");
-const li6 = document.createElement("li");
-const a1 = document.createElement("a");
-a1.textContent = "ANTIPASTI";
-const a2 = document.createElement("a");
-a2.textContent = "PRIMI";
-const a3 = document.createElement("a");
-a3.textContent = "SECONDI";
-const a4 = document.createElement("a");
-a4.textContent = "CONTORNI";
-const a5 = document.createElement("a");
-a5.textContent = "DOLCI";
-const a6 = document.createElement("a");
-a6.textContent = "CREME E SALSE";
-li1.appendChild(a1);
-li2.appendChild(a2);
-li3.appendChild(a3);
-li4.appendChild(a4);
-li5.appendChild(a5);
-li6.appendChild(a6);
-ul.append(li1, li2, li3, li4, li5, li6);
-navbar.appendChild(ul);
+// const navbar = document.getElementById("navbar");
+// const ul = document.createElement("ul");
+// const li1 = document.createElement("li");
+// const li2 = document.createElement("li");
+// const li3 = document.createElement("li");
+// const li4 = document.createElement("li");
+// const li5 = document.createElement("li");
+// const li6 = document.createElement("li");
+// const a1 = document.createElement("a");
+// a1.textContent = "ANTIPASTI";
+// const a2 = document.createElement("a");
+// a2.textContent = "PRIMI";
+// const a3 = document.createElement("a");
+// a3.textContent = "SECONDI";
+// const a4 = document.createElement("a");
+// a4.textContent = "CONTORNI";
+// const a5 = document.createElement("a");
+// a5.textContent = "DOLCI";
+// const a6 = document.createElement("a");
+// a6.textContent = "CREME E SALSE";
+// li1.appendChild(a1);
+// li2.appendChild(a2);
+// li3.appendChild(a3);
+// li4.appendChild(a4);
+// li5.appendChild(a5);
+// li6.appendChild(a6);
+// ul.append(li1, li2, li3, li4, li5, li6);
+// navbar.appendChild(ul);
 
-const hero = document.getElementById("hero");
-const titleHero = document.createElement("h1");
-titleHero.textContent = "Try Vegan";
-const paragrafHero = document.createElement("p");
-paragrafHero.textContent = "Vuoi provare l'alimentazione vegetale? Esplora le varie sezioni e trova la ricetta che fa al caso tuo! Troverai alcune ricette vegan, facili e veloci.";
-hero.append(titleHero, paragrafHero);
+// const hero = document.getElementById("hero");
+// const titleHero = document.createElement("h1");
+// titleHero.textContent = "Try Vegan";
+// const paragrafHero = document.createElement("p");
+// paragrafHero.textContent = "Vuoi provare l'alimentazione vegetale? Esplora le varie sezioni e trova la ricetta che fa al caso tuo! Troverai alcune ricette vegan, facili e veloci.";
+// hero.append(titleHero, paragrafHero);
 
-body.appendChild(hero);
+// body.appendChild(hero);
 
 const displayRecipes = (name, img, scope, facility, ingredients, preparation, time) => {
     const container = document.querySelector("#container");
