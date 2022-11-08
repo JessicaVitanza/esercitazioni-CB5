@@ -59,13 +59,13 @@ padding: 20px;
 .card h1 {
     text-transform: capitalize;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: -20px;
     font-size: 1.4rem;
     letter-spacing: 1px;
 }
 
 .card h5 {
     font-size: 1rem;
-    margin-top: 0px;
+    margin-top: 20px;
     font-weight: 400;
 }
