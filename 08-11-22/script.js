@@ -1,12 +1,14 @@
-// for ( let i = 1 ; i <= 150 ; i++)
+// for ( let i = 1 ; i <= 150 ; i++)                  // ciclo for al variare di i nell'url (elementi non in ordine al refresh della pagina)
 // fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
 // .then((resp) => resp.json())
 // .then((pokemon) => displayPokemon(pokemon));
 
 
-// elemento presente in HTML
-const loading = document.querySelector(".loading")
 
+// elemento presente in HTML
+const loading = document.querySelector(".loading");
+
+// per avere gli elementi in ordine :
 const urlArray = []; //creo array vuoto
 
 for ( let i = 1 ; i <= 150 ; i++) {
