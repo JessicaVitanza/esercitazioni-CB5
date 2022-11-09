@@ -1,18 +1,41 @@
-for ( let i = 1 ; i <= 150 ; i++)
-fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
-.then((resp) => resp.json())
-.then((pokemon) => displayPokemon(pokemon));
+// for ( let i = 1 ; i <= 150 ; i++)
+// fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
+// .then((resp) => resp.json())
+// .then((pokemon) => displayPokemon(pokemon));
 
+
+// elemento presente in HTML
+const loading = document.querySelector(".loading")
+
+const urlArray = []; //creo array vuoto
+
+for ( let i = 1 ; i <= 150 ; i++) {
+    urlArray.push(`https://pokeapi.co/api/v2/pokemon/${i}`)  // aggiungo gli url nell'array
+}
+
+let request = urlArray.map((url) => {       // faccio il map dell'array iniziale creandone uno nuovo con le promise
+    loading.classList.add("active");            // elemento loading in HTML ora con display block tramite la nuova classe css
+    return fetch(url).then((res) => res.json());
+});
+
+Promise.all(request).then((res) => res.map((r) => displayPokemon(r)))   // faccio il map dell'array di promises, prendo i singoli oggetti per la creazione delle card
+.finally(() => loading.classList.remove("active"));         // rimozione dell'elemento loading 
+
+
+// CREO LE CARD
 function displayPokemon (pokemon) {
     const container = document.getElementById("container");
 
+    // CARD
     const card = document.createElement("div");
     card.classList.add("card");
     card.classList.add(`bg-${pokemon.types[0].type.name}`);
 
+    // IMG
     const img = document.createElement("img");
     img.src = pokemon.sprites.front_default;
 
+    // ID
     const id = document.createElement("p");
     id.textContent = "# " + createId(pokemon.id);
     // if (pokemon.id < 10) {
@@ -23,6 +46,7 @@ function displayPokemon (pokemon) {
     //     id.textContent = "#" + pokemon.id;
     // }
 
+    // ID
     function createId (id) {
         if ( !id ) return null;
         if ( id < 10 ) {return `00${id}`}
@@ -30,9 +54,11 @@ function displayPokemon (pokemon) {
         return id 
     }
 
+    // NAME
     const name = document.createElement("h1");
     name.textContent = pokemon.name;
 
+    // TYPE
     const type = document.createElement("h5");
     type.textContent = "Type: " + pokemon.types[0].type.name;
 

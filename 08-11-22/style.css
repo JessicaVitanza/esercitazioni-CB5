@@ -131,3 +131,36 @@ padding: 20px;
 .bg-ice {
     background-color: #98d8d8;
 }
+
+.loading {
+    display: none;
+}
+
+.pre-active{
+    display: block;
+    color: darkblue;
+    font-weight: bolder;
+    letter-spacing: 12px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+    text-shadow: 4px 4px 1px yellow;
+}
+
+.active {
+    display: block;
+    color: yellow;
+    font-weight: bolder;
+    letter-spacing: 12px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+    text-shadow: 4px 4px 1px darkblue;
+}
+
