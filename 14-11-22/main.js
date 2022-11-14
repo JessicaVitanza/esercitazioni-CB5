@@ -1,24 +1,3 @@
-  // /**********************  loader ***********************/
-  // const loader = document.querySelector('.preload');
-  // const emoji = loader.querySelector('.emoji');
-  
-  // const emojis = ["🕐", "🕜", "🕑","🕝", "🕒", "🕞", "🕓", "🕟", "🕔", "🕠", "🕕", "🕡", "🕖", "🕢",  "🕗", "🕣", "🕘", "🕤", "🕙",  "🕥", "🕚", "🕦",  "🕛", "🕧"];
-  
-  // const interval = 125;
-  
-  // const loadEmojis = (arr) => {
-  //     setInterval(() => {
-  //       emoji.innerText = arr[Math.floor(Math.random() * arr.length)];
-  //       //console.log(Math.floor(Math.random() * arr.length))
-  //     }, interval);
-  // }
-  
-  // const init = () => {
-  //   loadEmojis(emojis);
-  // }
-  // init();
-
-
 // elementri presenti in HTML
 const container = document.getElementById("container");
 const card = document.getElementById("card");
@@ -35,8 +14,8 @@ fetch(result)
 .then((res) => res.json())
 .then((res) => {
   displayPost(res);
-  document.getElementById("loading").style.display = "none"
-});
+  document.getElementById("loading").style.display = "none"   // loading prima di prendere i dati dall'API
+}); 
 
 
 
