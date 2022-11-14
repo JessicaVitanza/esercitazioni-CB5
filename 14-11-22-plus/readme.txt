@@ -1,0 +1,1 @@
+metodo implementato dal prof evitando i 2 fetch per next e prev al variare di i
