@@ -18,7 +18,6 @@ fetch(result)
 }); 
 
 
-
 // creo la card dinamica
 const displayPost = (post) => {  
     title.textContent = post.title;
