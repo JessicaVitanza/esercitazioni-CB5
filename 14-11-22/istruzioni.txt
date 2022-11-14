@@ -1,8 +1,0 @@
-- creo la card statica in html dentro un div container
-- creo un div statico contenente i bottoni (dentro container)
-- in js richiamo gli elementi statici con queryselector ecc
-- prendo i dati daòò'API tramite una fetch
-- nel fetch aggiungo il loader che verrà visualizzato prima del caricamento dei dati
-- creo dinamicamente la card e inserisco i dati richiesti da mostrare a video
-- richiamo i bottoni creati in html
-- gli aggiungo addEventListener al variare di "i" per next o prev e disabilito il bottone al limite richiesto
