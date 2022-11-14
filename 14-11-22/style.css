@@ -69,12 +69,8 @@ p {
     transform: translateY(2px);
 }
 
-.loading {
-    display: none;
-}
 
-.active {
-    display: block;
+#loading {
     font-weight: bolder;
     color: #1af776;
     letter-spacing: 12px;
