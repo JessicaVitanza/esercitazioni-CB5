@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(85,80,162,0.2231267507002801) 0%, rgba(187,253,45,0.16430322128851538) 100%);
+}
+
+#container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    width: 506px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: fit-content;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 6px black;
+    background-color: whitesmoke;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+    border: none;
+    background-color: rgb(202, 205, 209);
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
+    width: 200px;
+    height: 30px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.invia {
+    background-color: rgb(236, 36, 36);
+    color: white;
+    padding: 8px 16px;
+    width: 100px;
+    box-shadow: 3px 3px 3px black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.invia:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 2px black;
+}
+
+#container-card {
+    margin-top: 30px;
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:30%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 2px 2px 6px black;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgba(175, 175, 175, 0.563);
+    margin-top: 20px;
+}
+
+.card h1 {
+    letter-spacing: 2px;
+}
+
+/* utilities */
+.bg-grass {
+    background-color: #DEFDE0;
+}
+
+.bg-electric {
+    background-color: #FCF7DE;
+}
+
+.bg-water {
+    background-color: #DEF3FD;
+}
+
+.bg-ground {
+    background-color: #f4e7da;
+}
+
+.bg-rock {
+    background-color: #d5d5d4;
+}
+
+.bg-fairy {
+    background-color: #fceaff;
+}
+
+.bg-poison {
+    background-color: #98d7a5;
+}
+
+.bg-bug {
+    background-color: #f8d5a3;
+}
+
+.bg-dragon {
+    background-color: #97b3e6;
+}
+
+.bg-psychic {
+    background-color: #eaeda1;
+}
+
+.bg-flying {
+    background-color: #F5F5F5;
+}
+
+.bg-fighting {
+    background-color: #E6E0D4;
+}
+
+.bg-normal {
+    background-color: #F5F5F5;
+}
+
+.bg-fire {
+    background-color: #FDDFDF;
+}
+
+.bg-ghost {
+    background-color: #705898;
+}
+
+.bg-ice {
+    background-color: #98d8d8;
+}
+
