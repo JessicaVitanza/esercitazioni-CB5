@@ -17,8 +17,18 @@
     },
     {
       "id": 6,
-      "name": "ciao",
-      "type": ""
+      "name": "Geodude",
+      "type": "rock"
+    },
+    {
+      "id": 7,
+      "name": "Ekans",
+      "type": "poison"
+    },
+    {
+      "id": 8,
+      "name": "Evee",
+      "type": "normal"
     }
   ]
 }

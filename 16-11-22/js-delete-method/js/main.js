@@ -29,7 +29,7 @@ const createCards = (url, id, data) => {
   idEl.className = "pokemonId";
 
   const btn = c("button");
-  btn.className = "btnDelete";
+  btn.className = "btn-delete";
 
   name.textContent = `Name: ${data.name}`;
   type.textContent = `Type: ${data.type}`;
