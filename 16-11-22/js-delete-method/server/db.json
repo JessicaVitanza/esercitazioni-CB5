@@ -1,0 +1,24 @@
+{
+  "pokemon": [
+    {
+      "id": 3,
+      "name": "Charmender",
+      "type": "fire"
+    },
+    {
+      "id": 4,
+      "name": "Chikorita",
+      "type": "grass"
+    },
+    {
+      "id": 5,
+      "name": "Squirtle",
+      "type": "water"
+    },
+    {
+      "id": 6,
+      "name": "ciao",
+      "type": ""
+    }
+  ]
+}
