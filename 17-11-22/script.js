@@ -40,26 +40,26 @@ GET(BASE_URL).then((data) => {
     createCardEl(product, cardList);
     return product;
   });
+});
 
-  inputEl.addEventListener("input", (e) => {
+inputEl.addEventListener("input", (e) => {
     cardList.textContent = "";
     prod.filter(
       (product) =>
-        product.title.includes(e.target.value) &&
-        createCardEl(product, cardList)
+        product.title.includes(e.target.value) && createCardEl(product, cardList)
     );
   });
-});
+
 
 // MOSTRA LA MODAL AL CLICK DEL BOTTONE
-const modal = document.querySelector(".modal");
-const modalBtn = document.createElement("button");
+const modal = qs(".modal");
+const modalBtn = ce("button");
 modalBtn.classList.add("modal-btn");  
 modalBtn.textContent = "ADD NEW ITEM";
-const closeButton = document.querySelector(".close-button");
-const hero = document.querySelector(".hero");
+const closeButton = qs(".close-button");
+const hero = qs(".hero");
 hero.appendChild(modalBtn);
-const save = document.querySelector(".save");
+const save = qs(".save");
 
 
 function toggleModal() {
@@ -78,10 +78,10 @@ function windowOnClick(event) {
 
 
 //  MODAL FORM -> POST METHOD
-// const form = document.querySelector(".save-box");
+// const form = qs(".save-box");
 
 // form.addEventListener("submit", (e) => {
-//     const titleEl = document.querySelector(".card__title");
+//     const titleEl = qs(".card__title");
 
 // 	e.preventDefault();
 // 	const data = {
