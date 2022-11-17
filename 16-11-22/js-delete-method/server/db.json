@@ -29,6 +29,16 @@
       "id": 8,
       "name": "Evee",
       "type": "normal"
+    },
+    {
+      "id": 9,
+      "name": "Cliffairy",
+      "type": "fairy"
+    },
+    {
+      "id": 10,
+      "name": "Sandshrew",
+      "type": "ground"
     }
   ]
 }
