@@ -2,7 +2,7 @@
   "pokemon": [
     {
       "id": 3,
-      "name": "Charmender",
+      "name": "Charmander",
       "type": "fire"
     },
     {
@@ -39,6 +39,11 @@
       "id": 10,
       "name": "Sandshrew",
       "type": "ground"
+    },
+    {
+      "id": 11,
+      "name": "Pikachu",
+      "type": "electric"
     }
   ]
 }
