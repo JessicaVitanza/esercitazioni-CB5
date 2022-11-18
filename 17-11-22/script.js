@@ -32,22 +32,20 @@ const createCardEl = (data, parent) => {
   parent.append(cardEl);
 };
 
-let prod = [];
 
 GET(BASE_URL).then((data) => {
   productsList = data.filter((product) => product.id <= 10);
-  prod = productsList.map((product) => {
-    createCardEl(product, cardList);
-    return product;
-  });
+  productsList.map((product) => createCardEl(product, cardList))
 });
 
 inputEl.addEventListener("input", (e) => {
-    cardList.textContent = "";
-    prod.filter(
-      (product) =>
-        product.title.includes(e.target.value) && createCardEl(product, cardList)
-    );
+    const searchString = e.target.value;
+
+    cardList.replaceChildren();
+
+    productsList
+    .filter(product => product?.title.includes(searchString))
+    .map(product => createCardEl(product, cardList))
   });
 
 
