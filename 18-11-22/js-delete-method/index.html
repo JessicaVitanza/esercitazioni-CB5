@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18-11-22</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <form name="pokemon">
+      <input type="text" name="pkmName" placeholder="Inserisci il nome, es: Charmander" />
+      <input type="text" name="pkmType" placeholder="Inserisci il tipo, es: fire" />
+      <input type="submit" value="ADD" class="btn" />
+    </form>
+    <form id="form-modifica" class="form2" name="pokemonPatch" autocomplete="off">
+        <input type="text" placeholder="Inserisci l'ID, es: 3" name="id">
+        <input type="text" placeholder="Inserisci il nome, es: Charmander" name="name">
+        <input type="text" placeholder="Inserisci il tipo, es: fire" name="type">
+        <input id="btn-modify" class="modify" type="submit" value="Modify">
+    </form>
+
+    <div class="container"></div>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/utils.js"></script>
+  </body>
+</html>
