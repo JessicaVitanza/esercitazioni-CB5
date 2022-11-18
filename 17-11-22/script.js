@@ -76,22 +76,3 @@ function windowOnClick(event) {
 
 
 //  MODAL FORM -> POST METHOD
-// const form = qs(".save-box");
-
-// form.addEventListener("submit", (e) => {
-//     const titleEl = qs(".card__title");
-
-// 	e.preventDefault();
-// 	const data = {
-// 		title: titleEl.value
-// 	}
-
-// 	POST(BASE_URL, data)
-// 		.then((response) => response.json())
-// 		.then((res) => {
-// 			console.log('Success:', res);
-// 		})
-// 		.catch((error) => {
-// 			console.error('Error:', error);
-// 		})
-// })
