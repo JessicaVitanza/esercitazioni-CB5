@@ -1,18 +1,18 @@
 "use strict"
 
-function somma (a, b) {
+function addizione (a, b) {
     return a + b;
 }
 
-function moltiplica (a, b) {
+function moltiplicazione (a, b) {
     return a * b;
 }
 
-function sottrai (a, b) {
+function sottrazione (a, b) {
     return a - b;
 }
 
-function dividi (a, b) {
+function divisione (a, b) {
     return a / b;
 }
 
@@ -23,23 +23,23 @@ const num2 = parseFloat(myArgs[2]);
 
 
 switch (operator) {
-    case 'somma':
-        let _somma = somma(num1, num2);
-        console.log("Il risultato di " + operator + " è : " + _somma);
+    case 'addizione':
+        let _addizione = addizione(num1, num2);
+        console.log("Il risultato di " + operator + " è : " + _addizione);
         break;
 
-    case 'sottrai':
-        let _sottrai = sottrai(num1, num2);
-        console.log("Il risultato di " + operator + " è : " + _sottrai);
+    case 'sottrazione':
+        let _sottrazione = sottrazione(num1, num2);
+        console.log("Il risultato di " + operator + " è : " + _sottrazione);
         break;
 
-    case 'dividi':
-        let _dividi = dividi(num1, num2);
-        console.log("Il risultato di " + operator + " è : " + _dividi);
+    case 'divisione':
+        let _divisione = divisione(num1, num2);
+        console.log("Il risultato di " + operator + " è : " + _divisione);
         break;
 
-    case 'moltiplica':
-        let _moltiplica = moltiplica(num1, num2);
+    case 'moltiplicazione':
+        let _moltiplica = moltiplicazione(num1, num2);
         console.log("Il risultato di " + operator + " è : " + _moltiplica);
         break;
     default:
