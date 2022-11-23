@@ -1,3 +1,5 @@
+import { ce, qs, GET } from "./utils.js";
+
 // Funzioni operazioni
 function somma(num1, num2) {
     return parseInt(num1) + parseInt(num2);
@@ -16,3 +18,4 @@ function somma(num1, num2) {
   }
 
   export { somma, sottrazione, divisione, moltiplicazione }
+
