@@ -1,21 +1,6 @@
-const express = require('express');
+const calcolatrice = require('./src/controller/calcolatrice');
 
-// Funzioni operazioni
-function somma(num1, num2) {
-    return parseInt(num1) + parseInt(num2);
-  }
-  
-  function sottrazione(num1, num2) {
-    return parseInt(num1) - parseInt(num2);
-  }
-  
-  function divisione(num1, num2){
-    return parseInt(num1) / parseInt(num2);
-  }
-  
-  function moltiplicazione(num1, num2){
-    return parseInt(num1) * parseInt(num2);
-  }
+const express = require('express');
 
 const app = express();
 
@@ -34,9 +19,8 @@ app.get('/pagina_somma', function (req, res) {
 app.get('/somma', function (req, res) {
     let param1 = req.query.param1;
     let param2 = req.query.param2;
-    console.log("il primo parametro è : " + param1 + " e il secondo parametro è : " + param2);
-    risultato = somma(param1, param2);
-    console.log("il risultato è : " + risultato);
+    risultato = calcolatrice.somma(param1, param2);
+    console.log("il risultato di somma è : " + risultato);
     res.status(200).send('' + risultato);
 })
 
@@ -48,9 +32,8 @@ app.get('/pagina_sottrazione', function (req, res) {
 app.get('/sottrazione', function (req, res) {
     let param1 = req.query.param1;
     let param2 = req.query.param2;
-    console.log("il primo parametro è : " + param1 + " e il secondo parametro è : " + param2);
-    risultato = sottrazione(param1, param2);
-    console.log("il risultato è : " + risultato);
+    risultato = calcolatrice.sottrazione(param1, param2);
+    console.log("il risultato di sottrazione è : " + risultato);
     res.status(200).send('' + risultato);
 })
 
@@ -62,9 +45,8 @@ app.get('/pagina_moltiplicazione', function (req, res) {
 app.get('/moltiplicazione', function (req, res) {
     let param1 = req.query.param1;
     let param2 = req.query.param2;
-    console.log("il primo parametro è : " + param1 + " e il secondo parametro è : " + param2);
-    risultato = moltiplicazione(param1, param2);
-    console.log("il risultato è : " + risultato);
+    risultato = calcolatrice.moltiplicazione(param1, param2);
+    console.log("il risultato di moltiplicazione è : " + risultato);
     res.status(200).send('' + risultato);
 })
 
@@ -76,8 +58,7 @@ app.get('/pagina_divisione', function (req, res) {
 app.get('/divisione', function (req, res) {
     let param1 = req.query.param1;
     let param2 = req.query.param2;
-    console.log("il primo parametro è : " + param1 + " e il secondo parametro è : " + param2);
-    risultato = divisione(param1, param2);
-    console.log("il risultato è : " + risultato);
+    risultato = calcolatrice.divisione(param1, param2);
+    console.log("il risultato di divisione è : " + risultato);
     res.status(200).send('' + risultato);
 })
