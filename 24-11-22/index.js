@@ -13,7 +13,7 @@ app.listen(3000, () => {
 
 // SOMMA
 app.get('/pagina_somma', function (req, res) {
-    res.sendFile('somma.html', {root: __dirname + "/src/html"});
+    res.sendFile('somma.html', {root: __dirname + "/src/resources/html"});
 });
 
 app.get('/somma', function (req, res) {
@@ -26,7 +26,7 @@ app.get('/somma', function (req, res) {
 
 //SOTTRAZIONE
 app.get('/pagina_sottrazione', function (req, res) {
-    res.sendFile('sottrazione.html', {root: __dirname + "/src/html"});
+    res.sendFile('sottrazione.html', {root: __dirname + "/src/resources/html"});
 });
 
 app.get('/sottrazione', function (req, res) {
@@ -39,7 +39,7 @@ app.get('/sottrazione', function (req, res) {
 
 //MOLTIPLICAZIONE
 app.get('/pagina_moltiplicazione', function (req, res) {
-    res.sendFile('moltiplicazione.html', {root: __dirname + "/src/html"});
+    res.sendFile('moltiplicazione.html', {root: __dirname + "/src/resources/html"});
 });
 
 app.get('/moltiplicazione', function (req, res) {
@@ -52,7 +52,7 @@ app.get('/moltiplicazione', function (req, res) {
 
 //DIVISIONE
 app.get('/pagina_divisione', function (req, res) {
-    res.sendFile('divisione.html', {root: __dirname + "/src/html"});
+    res.sendFile('divisione.html', {root: __dirname + "/src/resources/html"});
 });
 
 app.get('/divisione', function (req, res) {

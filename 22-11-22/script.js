@@ -38,8 +38,9 @@ switch(my_url) {
     const dataDiv = fs.readFileSync('./html/divisione.html');
     res.write(dataDiv.toString());
       res.write(`${divisione(param1, param2)}`);
+      break;
   case "/style.css":
-    const style = fs.readFileSync('./style.css');
+     const style = fs.readFileSync('./style.css');
       res.write(style.toString());
     break;
   default: res.write("<h1>ERRORE</h1><p>La pagina non esiste torna alla <a href='/home'>HOME</a></p>");
