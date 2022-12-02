@@ -192,12 +192,6 @@ app.get("/regista", function(req, res) {
 // ---- CREO ----
 app.post("/regista", function(req, res) {
 
-    if (req.body.nome == undefined){ 
-        res.status(400).send("Parametro nome mancante!")};
-    
-    if (req.body.cognome == undefined){ 
-        res.status(400).send("Parametro cognome mancante!")};
-
     const registi = JSON.parse(readFileSync('./src/registi.json', 'utf8'));
 
     const nuovo_regista = {
@@ -271,21 +265,16 @@ app.delete("/regista", function(req, res) {
 
     const id_da_cancellare = req.body.id;
 
-    const registi = JSON.parse(readFileSync('./src/attori.json', 'utf8'));
+    const registi = JSON.parse(readFileSync('./src/registi.json', 'utf8'));
 
     const regista = registi.filter((regista) => {
         return regista.id == id_da_cancellare;
     })
 
-    if (regista.length > 0){
         const array_deleted = registi.filter((regista) => {
             return regista.id != id_da_cancellare;
         })
     
         writeFileSync('./src/registi.json', JSON.stringify(array_deleted));
         res.status(200).send(array_deleted);
-    } 
-    else {
-        res.status(200).send(array_deleted);
-    }
 });
