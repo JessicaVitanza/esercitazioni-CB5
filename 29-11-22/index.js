@@ -43,9 +43,11 @@ app.get("/attore", function(req, res) {
 
     const attore = attori.find((attore) => {
     return attore.id == id_attore;
-})
+    })
+
     if (attore === undefined){
-        res.status(200).send("Attore non trovato!")}
+        res.status(200).send("Attore non trovato!"
+    )}
     else {
         res.json(attore);
     }
