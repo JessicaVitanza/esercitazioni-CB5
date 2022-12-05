@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <title>Equilibrium</title>
+</head>
+<body>
+
+    
+
+    <nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#discipline">DISCIPLINE</a></li>
+              <li><a class="menu__item" href="#gallery">ABBONAMENTI</a></li>
+              <li><a class="menu__item" href="#contatti">CONTATTI</a></li>
+            </ul>
+        </div>
+
+        <img src="./assets/logoipsum-288.svg" alt="">
+
+
+        <div class="menu__desk">
+            <ul>
+                <li><a class="desk__item" href="#discipline">DISCIPLINE</a></li>
+                <li><a class="desk__item" href="#gallery">ABBONAMENTI</a></li>
+                <li><a class="desk__item" href="#contatti">CONTATTI</a></li>
+              </ul>
+        </div>
+        <button id="darkMode"><img src="./assets/brightness_6_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+    </nav>
+
+    <div class="hero">
+      <img src="./assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <p>Voglia di fare sport? <br> 
+           Calisthenics, Power Yoga o Bodybuilding, <br> 
+           queste sono le discipline a tua disposizione e tante le modalità di allenamento. <br>
+           Esplora le varie sezioni e contattami per maggiori informazioni! </p>
+    </div>
+
+
+    <div class="discipline" id="discipline">
+        <div>
+            <img src="https://thenics.de/images/4-12.jpg" alt="">
+            <h1>Calisthenics</h1>
+            <p>Nasce come allenamento utilizzato dagli spartani e l’origine del nome richiama ciò che rappresenta questo sport . Calisthenics deriva infatti dal greco perché “Kalos” che significa bellezza mentre “Sthenos” significa forza.
+               <br> Il Calisthenics è la continua ricerca di eseguire figure e movimenti di forza sempre più difficili!
+                Il costante controllo del proprio corpo, la coordinazione muscolare per eseguire un esercizio di qualità  e l’equilibrio psicofisico sono le chiavi per sfidare la forza di gravità!
+               <br> Tramite l’allenamento costante incentrato sulla crescita muscolare, il condizionamento tendineo, l’incremento della forza e il miglioramento della perfomance il corpo sarà  capace di compiere gesti sempre più evoluti e complicati al fine di superare i propri limiti.</p>
+        </div>
+        <div>
+            <img src="https://img.freepik.com/premium-photo/woman-doing-yoga-pose-black-white-photo_148632-257.jpg" alt="">
+            <h1>Power Yoga</h1>
+            <p> Il Power yoga, o yoga dinamico, aiuta a mantenere posture impegnative, migliora la forza e libera dai blocchi energetici,
+                <br> è uno stile di yoga alquanto dinamico.
+                <br> Introdotto verso la metà degli anni ’90, indica un lavoro rivolto allo sviluppo di una “Power” puramente fisica che permette di mantenere posture impegnative per un lungo periodo, che migliora la forza e la resistenza.
+            <br> Questo tipo di yoga si basa principalmente sulla Prima Serie dell’Ashtanga Yoga, la sequenza è ridotta e l'esecuzione completa richiede almeno 1 ora e mezzo di tempo. 
+        <br> Come in tutte le tecniche nell'universo dello yoga, si usano i Bandha, ovvero si lavora attivando i muscoli attorno a una determinata articolazione e lasciano agire un lavoro che ha effetti anche sul versante energetico.</p>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/photos/black-and-white-photo-of-athletic-man-exercising-deadlift-with-picture-id1199283540?k=20&m=1199283540&s=170667a&w=0&h=Y5c9VXlbEeb_-T3fqH5nVEa_bMA-yWx_heZCBx1wEEM=" alt="">
+            <h1>Bodybuilding</h1>
+            <p>Il Bodybuilding è una disciplina che tramite l'allenamento con pesi, sovraccarichi e un'alimentazione specifica si pone come fine ultimo il cambiamento della composizione corporea, con l'aumento della massa muscolare e la riduzione del grasso corporeo, dove le finalità sono estetiche ma anche competitive. <br>
+                Nel tempo sono state sviluppate e sperimentate numerose metodologie di allenamento, ma in ogni caso motivazione, disciplina e perseveranza sono necessarie per applicarsi sufficientemente a lungo nell'allenamento programmato, in una sana dieta, e rispettare i cicli recupero/sonno. Per ottenere la "definizione" muscolare è indispensabile la riduzione del grasso corporeo e l'allenamento con sovraccarichi.</p>
+        </div>
+    </div>
+   
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">x</span>
+            <h3>Aggiunto al carrello!</h3>
+            <div class="btns">
+              <button class="show-subscribes-btn">Continua gli acquisti</button>
+            <button class="pay-btn">Procedi al pagamento</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="gallery"></div>
+
+    <form id="contact" action="mailto:jessicavitanza28@gmail.com" method="post">
+
+        <p>Hai qualche domanda? <br> 
+           Lascia un messaggio qui:</p>
+        
+        <div class="box-input">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            class="input-desk"
+            placeholder="es: Mario"
+            required
+          />
+          <label for="cognome">Cognome</label>
+          <input
+            type="text"
+            name="cognome"
+            id="cognome"
+            class="input-desk"
+            placeholder="es: Rossi"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-desk"
+            placeholder="es: mariorossi@gmail.com"
+            required
+          />
+          <label for="tel">Telefono</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            class="input-desk"
+            placeholder="es: 3458362421"
+            required
+          />
+          
+          <label for="message">Il tuo messaggio</label>
+          <textarea
+            name="message"
+            id="message"
+            class="input-desk"
+            cols="30"
+            rows="10"
+            placeholder="Scrivi qui il tuo messaggio.."
+            required
+          ></textarea>
+          <input class="invia" type="submit" value="Invia" />
+        </div>
+      </form>
+
+      <div id="contatti">
+        <a href="mailto:jessicavitanza28@gmail.com" target=”_blank”>Mail: jessicavitanza28@gmail.com</a>
+        <a href="tel:+393404898158" target=”_blank”>Tel: +39 340 48 98 158</a>
+        <a href="https://www.instagram.com/jessica.vitanza/" target=”_blank”>Instagram : jessica.vitanza</a>
+        <a href="https://www.linkedin.com/in/jessica-vitanza-2b53b1208/" target=”_blank”> Linkedin : Jessica Vitanza</a>
+    </div>
+
+      <footer>
+        <h3>Privacy</h3>
+        <p> Autorizzo il trattamento dei miei dati personali, ai sensi del D.lgs. 196 del 30 giugno 2003.</p>
+        <div id="myBtn" title="Go to top"class="ball-container">
+            <img src="./assets/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        </div>
+        <script src="./script.js" type="module"></script> 
+    </footer>
+</body>
+</html>
