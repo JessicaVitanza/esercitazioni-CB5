@@ -1,0 +1,26 @@
+.Button{
+    background: transparent;
+    border: 1px solid;
+    border-radius: .3em;
+    color: rgb(13, 209, 243);
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    margin: 6px;
+    transition: all 0.3s ;
+}
+
+.Button--variant-primary:hover{
+    background: rgb(251, 0, 0);
+    color: #202124 ;
+    transform: scale(1.1);
+}
+
+.Button--variant-secondary:hover{
+    background: rgb(13, 243, 47);
+    color: #202124 ;
+    transform: scale(1.2);
+}
+
+.Button--variant-useless:hover {
+    text-decoration: none;
+}

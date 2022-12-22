@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #202124;
+  color: rgb(13, 209, 243)
+}
+
+.App .no-border{
+  border: 0;
+}
+
+.App .mb-sm{
+  margin-bottom: 1em;
+}
+
+.text-sm{
+  font-size: .75rem;
+}
+
+.text-md{
+  font-size: 1rem;
+}
+
+.text-lg{
+  font-size: 1.2rem;
+}
+
+.text-xl{
+  font-size: 1.6rem;
+}

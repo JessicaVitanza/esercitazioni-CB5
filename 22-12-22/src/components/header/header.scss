@@ -1,0 +1,36 @@
+.Header{
+    margin: 0 0 2rem;
+    padding: 8px;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        background-color: rgb(13, 209, 243);
+        padding: 1rem;
+        margin: -.5rem;
+    }
+
+    .nav{
+        ul{
+            display: flex;
+            gap: 1.2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            display: inline-block;
+        }
+
+        a{
+            color: #202124;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+    }
+}
