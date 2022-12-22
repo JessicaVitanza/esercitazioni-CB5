@@ -1,3 +1,5 @@
+import './text.css';
+
 const variantMap = {
     body: `text-md`,
     title: `text-xl mb-sm`
