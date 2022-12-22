@@ -5,6 +5,7 @@ export function Button(props) {
 
   const { 
     className = '',
+    children = 'Non ho {children}',
     variant = 'none',
     ...otherAttributes
   } = props;
@@ -12,6 +13,9 @@ export function Button(props) {
   return (
       <button
           className={`Button Button--variant-${variant} ${className}`}
-          {...otherAttributes}></button>
+          {...otherAttributes}
+      >
+        {children}
+      </button>
   );
 }

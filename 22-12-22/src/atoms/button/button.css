@@ -2,25 +2,26 @@
     background: transparent;
     border: 1px solid;
     border-radius: .3em;
-    color: rgb(13, 209, 243);
+    color: #fff;
     cursor: pointer;
-    padding: 0.4rem 0.8rem;
-    margin: 6px;
-    transition: all 0.3s ;
+    padding: .4em .6em;
+    transition: all .3s;
+}
+
+.Button:hover{
+    text-decoration: underline;
 }
 
 .Button--variant-primary:hover{
-    background: rgb(251, 0, 0);
-    color: #202124 ;
-    transform: scale(1.1);
-}
-
-.Button--variant-secondary:hover{
-    background: rgb(13, 243, 47);
-    color: #202124 ;
+    background: rgb(255, 0, 81);   
+    border: none;
+    color:#202124 ;
     transform: scale(1.2);
 }
 
-.Button--variant-useless:hover {
-    text-decoration: none;
+.Button--variant-secondary:hover{
+    background: rgb(3, 233, 30);
+    border: none;
+    color:#202124 ;
+    transform: scale(1.2);
 }
