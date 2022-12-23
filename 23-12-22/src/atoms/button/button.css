@@ -1,0 +1,19 @@
+.Button{
+    background: transparent;
+    border: none;
+    border-radius: .3em;
+    color: #282c34;
+    cursor: pointer;
+    padding: .4em .6em;
+    cursor: pointer;
+}
+
+.Button--variant-done {
+    font-size: 1.6rem;
+    text-shadow: -1.5px 5px 3px rgba(0, 0, 0, 0.848);
+}
+
+.Button--variant-done:active {
+    text-shadow: -1.5px 2px 3px black;
+    transform:translateY(2px);
+}
