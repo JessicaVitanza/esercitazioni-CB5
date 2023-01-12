@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+    padding: 30px 0;
+    height: 250px;
+}
+
+.loading-blood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.drop{
+    width: 8rem;
+    height: 8rem;
+    background: #d41313;
+    border-radius: 40rem/40rem;
+    position: relative;
+    box-shadow: inset 6px 42px 20px 0 #f76969, inset 18px 89px 12px 0 #e72c2c, 12px 18px 17px 0 #160707;
+  }
+  
+  .drop::before{
+    position: absolute;
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    background-color: #f7f5f5;
+    left: 2.5rem;
+    top: 6rem;
+    transform: rotate(50deg);
+    border-radius: 50%;
+  }
+  
+  .drop::after{
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 2rem;
+    background-color: #eae6e6;
+    left: 3rem;
+    top: 1.5rem;
+    transform: rotate(60deg);
+    border-radius: 37% 54% 46% 46%;
+  }
