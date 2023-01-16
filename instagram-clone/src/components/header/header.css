@@ -1,0 +1,23 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.Header__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: -10px;
+}
+
+.logo {
+    width: 40%;
+    margin-left: 6px;
+}
+
+.icon {
+    width: 20%;
+    margin: 0;
+}

@@ -1,0 +1,8 @@
+.Stories {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 0 10px;
+}
