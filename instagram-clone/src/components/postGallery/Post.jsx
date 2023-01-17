@@ -16,12 +16,15 @@ function PostGallery(){
     return (
         <div className="Post">
               {post.map((msg) => (
-          <>
+        
+          <div className="Post__card">
           <div className="Post__div">
               <Users data={msg} key={msg.id} />
               <img className="Post__icon" src="./icon/dots.png" alt="" />
           </div>
-          <div className="Post__img"></div>
+          <div className="Post__img">
+              <img src="https://picsum.photos/400/400" alt="" />
+          </div>
           <div className="Post__interaction">
               <div>
                 <img  src="./icon/heart.png" alt="" />
@@ -38,7 +41,7 @@ function PostGallery(){
               </div>
               
           </div>
-          </>
+          </div>
         ))}      
           
         </div>

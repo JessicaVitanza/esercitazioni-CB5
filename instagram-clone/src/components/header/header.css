@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    position: fixed;
+    background-color: white;
 }
 
 .Header__icon {
@@ -21,3 +23,9 @@
     width: 20%;
     margin: 0;
 }
+
+@media only screen and (min-width: 600px) {
+    .Header {
+        display:none;
+    }
+  }

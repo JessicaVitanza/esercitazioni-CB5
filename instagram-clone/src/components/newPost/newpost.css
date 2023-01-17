@@ -1,0 +1,28 @@
+.NewPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.NewPost form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.NewPost input {
+  border: none;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px black;
+  width: 260px;
+  outline-color: rgb(255, 0, 132);
+}
+
+.NewPost .send {
+    box-shadow: 2px 2px 2px black;
+    width: 60px;
+}
