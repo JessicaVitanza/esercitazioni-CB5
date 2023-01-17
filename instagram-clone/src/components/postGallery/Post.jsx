@@ -13,6 +13,8 @@ function PostGallery(){
     }, []);
 
 
+    const imgUrl ="https://picsum.photos/400/400?" 
+
     return (
         <div className="Post">
               {post.map((msg) => (
@@ -23,7 +25,7 @@ function PostGallery(){
               <img className="Post__icon" src="./icon/dots.png" alt="" />
           </div>
           <div className="Post__img">
-              <img src="https://picsum.photos/400/400" alt="" />
+              <img src={imgUrl + msg.id} alt="" />
           </div>
           <div className="Post__interaction">
               <div>
