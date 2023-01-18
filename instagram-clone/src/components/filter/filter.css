@@ -1,0 +1,18 @@
+.Filter {
+    display: flex;
+    gap: 10px;
+    margin: 30px;
+  }
+
+.Filter input {
+  outline-color: rgb(244, 15, 133);
+  border-radius: 16px;
+  border: none;
+  padding: 8px 12px;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.248);
+}
+
+.Filter .submit {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
+
+}

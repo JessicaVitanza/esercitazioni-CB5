@@ -4,13 +4,13 @@ import Comments from "../comments/Comments";
 import Users from "../users/Users";
 import './post.css';
 
-function PostGallery(){    
+function PostGallery({ filterSearch }){    
     
     const [post, setPost] = useState([]);
   
     useEffect(() => {
-      GET("posts").then(({ posts }) => setPost(posts));
-    }, []);
+      GET("posts").then(({ posts }) => setPost(posts.filter((post) => post.title.includes(filterSearch))))
+    }, [filterSearch]);
 
 
     const imgUrl ="https://picsum.photos/400/400?" 

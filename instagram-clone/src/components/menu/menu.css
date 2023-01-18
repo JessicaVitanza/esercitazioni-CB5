@@ -1,10 +1,13 @@
 .Menu {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
     align-items: center;
     padding: 10px;
     cursor: pointer;
     background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .Menu .icon {
@@ -26,12 +29,21 @@
     border-radius: 100%;
 }
 
+.Menu button {
+    background-color: transparent;
+    border: none;
+    
+}
+
 @media only screen and (min-width: 800px) {
     .Menu {
-        align-self: flex-start;
+        left: 0;
+        justify-content: center;
         flex-direction: column;
         position: fixed;
-        height: 98vh;
+        height: 100%;
+        width: fit-content;
+        z-index: 0;
     }
 
     .Menu .desk {

@@ -1,0 +1,39 @@
+.Button {
+    position: fixed;
+    bottom: 5px;
+    left: 76px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(185, 241, 185);
+    border: 0;
+    border-radius: 100%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    font-size: 1.6rem;
+    font-family: monospace;
+    color: lightseagreen;
+    cursor: pointer;
+  }
+  
+  .Button:hover {
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.35);
+  }
+  .Button:active {
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.35);
+    background-color: lightseagreen;
+    color: rgb(185, 241, 185);
+  }
+  
+  .active {
+    border: 2px solid lightcoral;
+  }
+  
+  .passive {
+    border: 2px solid lightseagreen;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .Button {
+      top: 15px;
+      left: 156px;
+    }
+  }

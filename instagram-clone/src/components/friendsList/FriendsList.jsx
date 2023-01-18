@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
 import { GET } from "../../utils/http";
 import Friend from "../friend/Friend";
+import Filter from "../filter/Filter";
 import "./friendslist.css";
 
-const FriendsList = () => {
+const FriendsList = ({filterSearch }) => {
   const [friendsList, setFriendsList] = useState([]);
 
   useEffect(() => {
-    // GET("users").then(({ users }) => setFriendsList(users));
-    GET("users").then((data) => setFriendsList(data.users));
-  }, []);
+    GET("users").then(( data ) => setFriendsList(data.users));
+  },[filterSearch]);
 
   return (
     <div className="FriendsList">
-        <p>Suggerimenti per te :</p>
+      <p>Amici :</p>
+         
       {friendsList.map((friend) => (
           <div className="FriendsList__text" >
         <Friend data={friend} key={friend.id} />
