@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from './components/header/Header';
 import StoriesGallery from './components/storiesGallery/Stories';
 import PostGallery from './components/postGallery/Post';

@@ -5,22 +5,22 @@ import Filter from "../filter/Filter";
 import "./friendslist.css";
 
 const FriendsList = ({filterSearch }) => {
+  const [filterState, setFilterState] = useState("");
   const [friendsList, setFriendsList] = useState([]);
 
   useEffect(() => {
     GET("users").then(( data ) => setFriendsList(data.users));
-  },[filterSearch]);
+  },[]);
 
   return (
     <div className="FriendsList">
       <p>Amici :</p>
-         
-      {friendsList.map((friend) => (
-          <div className="FriendsList__text" >
-        <Friend data={friend} key={friend.id} />
-        <span>segui</span>
-        </div>
-      ))}
+      <Filter setFilterState={setFilterState} />
+      {friendsList
+        .filter((friend) => friend.firstName.includes(filterState))
+        .map((friend) => (
+          <Friend data={friend} key={friend.id} />
+        ))}
     </div>
   );
 };

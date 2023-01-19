@@ -1,6 +1,7 @@
 import "./modal.css";
 
 const Modal = ({ children }) => {
+
   return (
     <div className="Modal">
       <div className="content">{children}</div>
