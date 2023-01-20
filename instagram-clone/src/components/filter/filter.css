@@ -1,7 +1,6 @@
 .Filter {
     display: flex;
     gap: 10px;
-    margin: 30px;
   }
 
 .Filter input {

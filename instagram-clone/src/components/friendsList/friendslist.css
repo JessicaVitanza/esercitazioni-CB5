@@ -1,28 +1,53 @@
 .FriendsList {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    margin-top: -90px;
+    margin-bottom: 110px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.FriendsList .search__div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.div__friends {
+    display: flex;
+    overflow: scroll;
+
 }
 
 @media only screen and (min-width: 800px) {
 
     .FriendsList {
-        display: block;
         background-color: white;
         height: 100%;
         position: fixed;
         right: 0;
-        overflow-y: scroll;
+        width: 240px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
-        width: 340px;
-        gap: 30px;
-        z-index: 0;
+        margin: 0;
+    }
+
+    .div__friends {
+        flex-direction: column;
+        padding-bottom: 30px;
     }
 
     .FriendsList__text {
+        
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-end;
         width: 280px;
         justify-content: space-between;
         margin-top: -20px;
@@ -38,19 +63,6 @@
         text-transform: uppercase;
     }
 
-    .FriendsList__text span {
-        color: rgb(170, 170, 170);
-    }
 
-    .search {
-        padding: 20px;
-        width: 300px;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 20px;
-    }
 
 }

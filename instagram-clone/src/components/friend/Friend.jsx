@@ -8,7 +8,6 @@ const Friend = ({ data }) => {
       <img src={image} alt={lastName} />
       <div className="Friend__text">
         <h3>{`${firstName} ${lastName}`}</h3>
-        <h4>{address.city}</h4>
       </div>
     </div>
   );

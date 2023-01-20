@@ -5,7 +5,6 @@ import PostGallery from './components/postGallery/Post';
 import NewPost from './components/newPost/NewPost';
 import Menu from './components/menu/Menu';
 import FriendsList from './components/friendsList/FriendsList';
-import Filter from "./components/filter/Filter";
 import Button from "./components/button/Button";
 import Modal from "./components/modal/Modal";
 import './App.css';
@@ -13,16 +12,14 @@ import './App.css';
 
 function App() {
 
-  const [filterState, setFilterState] = useState("");
   const [isModalEnabled, setModalEnabled] = useState(false);
 
   const onHandleModal = () => setModalEnabled((prev) => !prev);
 
-  return (
+  return  (
     <div className="App">
       < Header />
       < StoriesGallery />
-      < Filter setFilterState={setFilterState} />
       
       {isModalEnabled && (
           <Modal>
@@ -30,13 +27,12 @@ function App() {
           </Modal>
         )}
 
-      < PostGallery filterSearch={filterState}/>
+      < PostGallery/>
       < Menu />
       < FriendsList  />
       <Button isModalEnabled={isModalEnabled} func={onHandleModal} />
-    </div>
-
-  );
+      </div>
+      )
 }
 
 export default App;

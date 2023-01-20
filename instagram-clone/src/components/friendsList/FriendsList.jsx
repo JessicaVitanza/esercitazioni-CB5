@@ -14,13 +14,18 @@ const FriendsList = ({filterSearch }) => {
 
   return (
     <div className="FriendsList">
+      <div className="search__div">
       <p>Amici :</p>
       <Filter setFilterState={setFilterState} />
+      </div>
+      
+      <div className="div__friends">
       {friendsList
         .filter((friend) => friend.firstName.includes(filterState))
         .map((friend) => (
           <Friend data={friend} key={friend.id} />
         ))}
+</div>
     </div>
   );
 };

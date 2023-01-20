@@ -9,7 +9,7 @@ function PostGallery({ filterSearch }){
     const [post, setPost] = useState([]);
   
     useEffect(() => {
-      GET("posts").then(({ posts }) => setPost(posts.filter((post) => post.title.includes(filterSearch))))
+      GET("posts").then(({ posts }) =>setPost(posts.filter((post) => post.id <= 5)))
     }, [filterSearch]);
 
 
