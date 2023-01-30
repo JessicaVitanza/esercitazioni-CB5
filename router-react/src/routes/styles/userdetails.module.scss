@@ -1,0 +1,43 @@
+.Details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 16px;
+    height: fit-content;
+    padding: 8px 16px;
+    background-color: rgba(204, 204, 204, 0.322);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.583);
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 120px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+
+    button {
+      margin-bottom: 20px;
+      cursor: pointer;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.583);
+    }
+  }
