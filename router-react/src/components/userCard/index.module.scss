@@ -1,0 +1,20 @@
+.UserCard {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    min-width: 180px;
+    width: 280px;
+    padding: 6px 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.35s;
+  }
+  
+  .UserCard:hover {
+    transform: scale(1.1);
+  }
+  .UserCard:active {
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.35);
+    transform: scale(0.8);
+  }
