@@ -8,7 +8,7 @@ import ErrorPage from "./error-page";
 import "./index.css";
 import Posts from "./routes/posts";
 import Post from "./routes/post";
-import Spline from "./routes/splinegame";
+import Spline from '@splinetool/react-spline';
 
 // const router = createBrowserRouter([
 //   {
@@ -39,7 +39,7 @@ const router = createBrowserRouter(
    
       <Route>
         <Route path="/" element={<App />} errorElement={<ErrorPage />}>
-          <Route path="splinegame" element={<Spline />} />
+          <Route path="splinegame" element={<Spline scene="https://prod.spline.design/PXGK9KP0wLCCu7PA/scene.splinecode" />} />
           <Route path="users" element={<Users />} />
           <Route path="users/:userId" element={<User />} />
           <Route path="posts" element={< Posts />} />
