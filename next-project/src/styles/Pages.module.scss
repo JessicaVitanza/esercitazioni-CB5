@@ -1,0 +1,38 @@
+.Pages {
+    padding: 10px 20px;
+  
+    &__users {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+    }
+  
+    &__posts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__user {
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: #ccc;
+      width: 400px;
+      height: 80px;
+      border-radius: 8px;
+      color: black;
+      transition: all .35s;
+    }
+
+    &__user:hover {
+      background-color: coral;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
