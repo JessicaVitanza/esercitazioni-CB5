@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-size: 1.6rem;
+  }
+  
+  button:hover {
+    border: 2px solid coral;
+  }
+  
+  .btnClear {
+    width: fit-content;
+    border-radius: 10px;
+  }
