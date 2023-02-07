@@ -1,0 +1,27 @@
+.TodoItem {
+    padding: 6px 12px;
+    border-radius: 26px;
+    cursor: pointer;
+    background: rgba( 69, 6, 99, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(40, 41, 52, 0.484);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+  
+    p {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  
+    &:hover {
+      background-color: #33044a;
+    }
+  
+    &:active {
+      background-color: #e53eb3;
+    }
+  }
+  
+  .statusDone {
+    text-decoration: line-through;
+  }
